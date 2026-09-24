@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-05-lcd-live",
+  "eyebrow": "PICOKIT // LESSON 05",
+  "title": "PICOKIT // LCD LIVE",
+  "subtitle": "LIVE LCD COUNTER AND AUTHENTICATED HEARTBEAT",
+  "accent": "#FF0020",
+  "dim": "#9E0013",
+  "white": "#F3D2DF",
+  "cyan": "#7FD8E0",
+  "bg": "#110002",
+  "bg_edge": "#050000",
+  "icon": "lcd",
+  "panel_status": "UP 42 s  ·  COUNT 42  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "LCD",
+      "value": "0x27"
+    },
+    {
+      "label": "UP",
+      "value": "42 s"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-32 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00005  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] lcd uptime 42 s  count 42  onboard blink",
+    "[+] ack sent  rssi -32  snr 9.0"
+  ],
+  "categories": [
+    "LCD",
+    "LIVE",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "LINE-01",
+      "label": "uptime",
+      "value": "seconds"
+    },
+    {
+      "tag": "LINE-02",
+      "label": "counter",
+      "value": "steps"
+    },
+    {
+      "tag": "BUS-01",
+      "label": "i2c1",
+      "value": "100 kHz"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ LIVE ]=="
+  ],
+  "layout": "grid",
+  "stat": "0x27"
+}
